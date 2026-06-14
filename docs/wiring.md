@@ -3,7 +3,7 @@
 ## Touch Inputs
 
 | Pad | GPIO | 
-|---|---|---|
+|---|---|
 | Touch Pad 1 | GPIO 1 | 
 | Touch Pad 2 | GPIO 2 | 
 
