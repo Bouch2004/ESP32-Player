@@ -51,6 +51,20 @@ This project uses the standard ESP-IDF (v5.3+) toolchain. A convenience script `
 ./manage.sh monitor firmware
 ```
 
+## Testing the Audio (Linux)
+
+Because the ESP32-S3 acts as a USB **Microphone** to the PC, your computer won't automatically play the sounds out loud. You must route the microphone input to your speakers.
+
+1. **Select the Input**: Open your system's Sound Settings. Under the **Input** section, select `Microphone - ESP UAC Device`.
+2. **Listen to the Input**: Open your terminal and run the following command to pipe the microphone data directly to your speakers:
+
+```bash
+arecord -f S16_LE -c 2 -r 16000 | aplay -f S16_LE -c 2 -r 16000
+```
+*(Note: adjust the `-r 16000` to `-r 44100` if you are using 44.1kHz audio files as recommended above).*
+
+You will now hear the MP3s play through your PC speakers when you touch the ESP32 pins!
+
 ## System Requirements
 - ESP-IDF v5.3 or newer
 - Linux/Ubuntu host for development
