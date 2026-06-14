@@ -1,0 +1,11 @@
+build/
+.cache/
+sdkconfig
+sdkconfig.old
+*.bin
+*.elf
+*.map
+*.log
+__pycache__/
+.DS_Store
+managed_components/
