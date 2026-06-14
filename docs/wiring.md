@@ -2,10 +2,10 @@
 
 ## Touch Inputs
 
-| Pad | GPIO | Wire colour (suggestion) |
+| Pad | GPIO | 
 |---|---|---|
-| Touch Pad 1 | GPIO 1 | Yellow |
-| Touch Pad 2 | GPIO 2 | Blue |
+| Touch Pad 1 | GPIO 1 | 
+| Touch Pad 2 | GPIO 2 | 
 
 Expose a short (~10 cm) bare wire from each GPIO pin. The touch is detected capacitively — no extra components needed.
 
